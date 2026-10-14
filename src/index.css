@@ -1,0 +1,221 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-display: 'Fraunces', Georgia, serif;
+    --font-interface: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    --font-serif: var(--font-display);
+    --font-sans: var(--font-interface);
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+    /* Elegant Imperial Emerald & Royal Ivory Palette (Balanced Normal Contrast) */
+    --bg-primary: #FAF8F5;          /* Warm Natural Ivory Canvas */
+    --bg-secondary: #F4F0E6;        /* Subtle secondary ivory */
+    --bg-tertiary: #ECE7DC;         /* Soft sage-ivory tint */
+    --surface-elevated: #FFFFFF;    /* Pristine Card Surface */
+    --surface-hover: #FAF7F0;       /* Gentle Card Hover */
+    --surface-alt: #F7F4EB;         /* Subtle well surface */
+    
+    --text-primary: #1C3026;        /* Deep Forest Green-Charcoal (Normal Balanced Reading Contrast) */
+    --text-secondary: #4A5E53;      /* Smooth Slate Sage (Soft & Readable) */
+    --text-muted: #6D8074;          /* Restrained Olive-Sage Muted Tone */
+    
+    --accent-primary: #1E4E38;      /* Master Imperial Emerald */
+    --accent-hover: #153E2B;        /* Deep Emerald Hover */
+    --accent-soft: #EBF1EB;         /* Soft Sage Tint */
+    --accent-sage: #8FA491;         /* Refined Sage Accent */
+    --accent-gold: #C6A66A;         /* Champagne Gold Accent */
+    --gold-accent: #C6A66A;         /* Champagne Gold Accent */
+    --gold-light: #F4E8D1;          /* Pale Gold Highlight */
+    --gold-dark: #8F6F2E;           /* Deep Antique Gold */
+    --forest-deep: #163026;         /* Forest Deep branding */
+    
+    --border-subtle: #E2DCD0;       /* Soft Delicate Luxury Border */
+    --border-strong: #CDC4B3;       /* Balanced Natural Border */
+    
+    --status-success: #1E5C3E;
+    --status-warning: #B88B35;
+    --status-error: #B53229;
+    
+    --waveform-reference: #1E5C3E;  /* Emerald for reference audio */
+    --waveform-participant: #C6A66A;/* Champagne gold for participant */
+    --waveform-highlight: #8FA491;  /* Sage accent */
+    --chart-grid: #E8E2D6;
+
+    /* Semantic mappings */
+    --color-bg: var(--bg-primary);
+    --color-bg-subtle: var(--bg-secondary);
+    --color-surface: var(--surface-elevated);
+    --color-surface-hover: var(--surface-hover);
+    --color-border: var(--border-subtle);
+    --color-border-strong: var(--border-strong);
+    --color-text-primary: var(--text-primary);
+    --color-text-secondary: var(--text-secondary);
+    --color-text-muted: var(--text-muted);
+    --color-accent: var(--accent-primary);
+    --color-accent-hover: var(--accent-hover);
+    --color-accent-soft: var(--accent-soft);
+    --color-forest: var(--forest-deep);
+    --danger: var(--status-error);
+    --warning: var(--status-warning);
+    --success: var(--status-success);
+  }
+
+  .dark {
+    /* Imperial Emerald Dark Theme (Harmonious Normal Contrast) */
+    --bg-primary: #0D1C16;
+    --bg-secondary: #12251D;
+    --bg-tertiary: #182E25;
+    --surface-elevated: #152C22;
+    --surface-hover: #1A3529;
+    --surface-alt: #10231B;
+    
+    --text-primary: #F5F3EC;
+    --text-secondary: #C7D7CE;
+    --text-muted: #8BA094;
+    
+    --accent-primary: #A8C4A6;
+    --accent-hover: #BBD4B9;
+    --accent-soft: #183C2D;
+    --accent-sage: #A8C4A6;
+    --accent-gold: #DFBA76;
+    --gold-accent: #DFBA76;
+    --gold-light: #F4E2BD;
+    --gold-dark: #A57E32;
+    --forest-deep: #0D1C16;
+    
+    --border-subtle: #224335;
+    --border-strong: #2E5A47;
+    
+    --status-success: #82B38D;
+    --status-warning: #E8C178;
+    --status-error: #E87E74;
+    
+    --waveform-reference: #82B38D;
+    --waveform-participant: #DFBA76;
+    --waveform-highlight: #DFBA76;
+    --chart-grid: #1A382B;
+
+    /* Semantic mappings */
+    --color-bg: var(--bg-primary);
+    --color-bg-subtle: var(--bg-secondary);
+    --color-surface: var(--surface-elevated);
+    --color-surface-hover: var(--surface-hover);
+    --color-border: var(--border-subtle);
+    --color-border-strong: var(--border-strong);
+    --color-text-primary: var(--text-primary);
+    --color-text-secondary: var(--text-secondary);
+    --color-text-muted: var(--text-muted);
+    --color-accent: var(--accent-primary);
+    --color-accent-hover: var(--accent-hover);
+    --color-accent-soft: var(--accent-soft);
+    --color-forest: var(--forest-deep);
+    --danger: var(--status-error);
+    --warning: var(--status-warning);
+    --success: var(--status-success);
+  }
+
+  body {
+    font-family: var(--font-interface);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    min-height: 100vh;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font-family: var(--font-interface);
+  }
+
+  .font-serif,
+  .font-display {
+    font-family: var(--font-display);
+    font-optical-sizing: auto;
+  }
+
+  .font-sans,
+  .font-interface {
+    font-family: var(--font-interface);
+  }
+
+  .font-mono {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Fluid typography utilities using clamp() - Refined editorial weights */
+  .hero-headline {
+    font-family: var(--font-display);
+    font-size: clamp(2.6rem, 5.6vw, 5.2rem);
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+    font-weight: 400;
+  }
+
+  .page-heading {
+    font-family: var(--font-display);
+    font-size: clamp(1.9rem, 3.6vw, 3.25rem);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+  }
+
+  .section-heading {
+    font-family: var(--font-display);
+    font-size: clamp(1.45rem, 2.6vw, 2.3rem);
+    line-height: 1.22;
+    letter-spacing: -0.015em;
+    font-weight: 400;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Refined Luxury Accent Styles (Balanced Normal Contrast) */
+  .luxury-gold-border {
+    border: 1px solid rgba(198, 166, 106, 0.3);
+    box-shadow: 0 4px 20px -2px rgba(18, 60, 50, 0.04), 0 0 1px 1px rgba(198, 166, 106, 0.15);
+  }
+
+  .luxury-glass-card {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(226, 220, 208, 0.7);
+    box-shadow: 0 15px 35px -10px rgba(16, 42, 33, 0.05), 0 1px 3px rgba(16, 42, 33, 0.03);
+  }
+
+  .dark .luxury-glass-card {
+    background: rgba(21, 44, 34, 0.92);
+    border: 1px solid rgba(34, 67, 53, 0.6);
+    box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.3);
+  }
+
+  .luxury-gold-glow {
+    box-shadow: 0 0 20px rgba(198, 166, 106, 0.18);
+  }
+}
+
+/* Restrained natural scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(119, 121, 109, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(49, 90, 67, 0.45);
+}

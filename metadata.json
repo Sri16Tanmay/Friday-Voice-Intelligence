@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Friday",
+  "description": "Temporal flaw grounding and acoustic time-series speech evaluation system comparing ideal vs. flawed rhetorical deliveries with mathematical explainability.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

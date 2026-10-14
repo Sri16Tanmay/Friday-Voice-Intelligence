@@ -1,0 +1,213 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Gold Metallic Gradients -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2DFB3"/>
+      <stop offset="25%" stop-color="#D4AF37"/>
+      <stop offset="50%" stop-color="#AA8232"/>
+      <stop offset="75%" stop-color="#E5C77D"/>
+      <stop offset="100%" stop-color="#916B23"/>
+    </linearGradient>
+
+    <linearGradient id="goldLight" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C6A66A"/>
+      <stop offset="50%" stop-color="#F5E5C4"/>
+      <stop offset="100%" stop-color="#AA8232"/>
+    </linearGradient>
+
+    <!-- Deep Imperial Emerald Gradients -->
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1F5A44"/>
+      <stop offset="40%" stop-color="#0E392B"/>
+      <stop offset="80%" stop-color="#07231A"/>
+      <stop offset="100%" stop-color="#051912"/>
+    </linearGradient>
+
+    <linearGradient id="emeraldHighlight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2D7A5C"/>
+      <stop offset="60%" stop-color="#144634"/>
+      <stop offset="100%" stop-color="#09281E"/>
+    </linearGradient>
+
+    <!-- Warm Ivory Background Disc Gradient -->
+    <radialGradient id="discBg" cx="48%" cy="46%" r="52%">
+      <stop offset="0%" stop-color="#FAF8F2"/>
+      <stop offset="65%" stop-color="#F4EFE4"/>
+      <stop offset="90%" stop-color="#ECE5D6"/>
+      <stop offset="100%" stop-color="#E2DAC7"/>
+    </radialGradient>
+
+    <!-- Subtle Drop Shadow Filters -->
+    <filter id="softShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="2" dy="5" stdDeviation="4" flood-color="#12251D" flood-opacity="0.18"/>
+    </filter>
+    <filter id="glowGold" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#C6A66A" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Medallion Background -->
+  <circle cx="256" cy="256" r="224" fill="url(#discBg)"/>
+
+  <!-- Outer Fine Gold Rings -->
+  <circle cx="256" cy="256" r="224" fill="none" stroke="url(#goldGrad)" stroke-width="4.5"/>
+  <circle cx="256" cy="256" r="220" fill="none" stroke="url(#goldLight)" stroke-width="1.2" opacity="0.8"/>
+
+  <!-- Cardinal Four-Pointed Star Accents -->
+  <!-- Top Star -->
+  <g transform="translate(256, 32)">
+    <path d="M 0 -14 Q 2 -3 14 0 Q 2 3 0 14 Q -2 3 -14 0 Q -2 -3 0 -14 Z" fill="url(#goldGrad)" stroke="#684D1B" stroke-width="0.6"/>
+    <path d="M 0 -10 Q 1 -2 10 0 Q 1 2 0 10 Q -1 2 -10 0 Q -1 -2 0 -10 Z" fill="url(#emeraldGrad)"/>
+    <circle cx="0" cy="0" r="1.5" fill="#FFF2D6"/>
+  </g>
+
+  <!-- Bottom Star -->
+  <g transform="translate(256, 480)">
+    <path d="M 0 -14 Q 2 -3 14 0 Q 2 3 0 14 Q -2 3 -14 0 Q -2 -3 0 -14 Z" fill="url(#goldGrad)" stroke="#684D1B" stroke-width="0.6"/>
+    <path d="M 0 -10 Q 1 -2 10 0 Q 1 2 0 10 Q -1 2 -10 0 Q -1 -2 0 -10 Z" fill="url(#emeraldGrad)"/>
+    <circle cx="0" cy="0" r="1.5" fill="#FFF2D6"/>
+  </g>
+
+  <!-- Left / Right Subtle Accent Beads -->
+  <circle cx="32" cy="256" r="3" fill="url(#goldGrad)"/>
+  <circle cx="480" cy="256" r="3" fill="url(#goldGrad)"/>
+
+  <!-- ==================== LEFT WAVEFORM BARS ==================== -->
+  <g filter="url(#softShadow)" opacity="0.95">
+    <circle cx="68" cy="226" r="3" fill="url(#goldGrad)"/>
+    <rect x="80" y="214" width="6.5" height="24" rx="3.2" fill="url(#goldGrad)"/>
+    <rect x="94" y="200" width="7" height="52" rx="3.5" fill="url(#emeraldGrad)"/>
+    <rect x="109" y="184" width="7.5" height="84" rx="3.7" fill="url(#goldGrad)"/>
+    <rect x="124" y="174" width="8" height="104" rx="4" fill="url(#emeraldHighlight)"/>
+    <rect x="140" y="190" width="7.5" height="72" rx="3.7" fill="url(#goldGrad)"/>
+    <circle cx="157" cy="226" r="3.2" fill="url(#emeraldGrad)"/>
+  </g>
+
+  <!-- ==================== RIGHT WAVEFORM BARS ==================== -->
+  <g filter="url(#softShadow)" opacity="0.95">
+    <circle cx="355" cy="226" r="3.2" fill="url(#emeraldGrad)"/>
+    <rect x="365" y="190" width="7.5" height="72" rx="3.7" fill="url(#goldGrad)"/>
+    <rect x="380" y="174" width="8" height="104" rx="4" fill="url(#emeraldHighlight)"/>
+    <rect x="395" y="184" width="7.5" height="84" rx="3.7" fill="url(#goldGrad)"/>
+    <rect x="410" y="200" width="7" height="52" rx="3.5" fill="url(#emeraldGrad)"/>
+    <rect x="424" y="214" width="6.5" height="24" rx="3.2" fill="url(#goldGrad)"/>
+    <circle cx="444" cy="226" r="3" fill="url(#goldGrad)"/>
+  </g>
+
+  <!-- ==================== CENTERPIECE: 'F' & AI FEMALE SILHOUETTE ==================== -->
+  <g filter="url(#softShadow)">
+    <!-- Top Bar of 'F' (Emerald with Gold Bevels) -->
+    <!-- Gold Under-Shadow for F Bar -->
+    <path d="M 166 94 C 180 84 212 80 260 80 L 366 80 C 374 80 376 86 371 93 C 362 106 350 124 336 142 L 290 142 C 298 126 312 110 328 102 L 244 102 C 218 102 195 110 180 124 Z" fill="url(#goldGrad)"/>
+    <!-- Emerald Main F Top Bar -->
+    <path d="M 170 91 C 184 82 214 78 260 78 L 368 78 C 376 78 376 84 371 90 C 360 102 348 120 334 138 L 294 138 C 304 122 318 106 332 98 L 246 98 C 216 98 194 106 178 120 Z" fill="url(#emeraldGrad)" stroke="url(#goldLight)" stroke-width="1.2"/>
+
+    <!-- Left Upper Arch of F (Flowing Hair Ribbons) -->
+    <!-- Back Emerald Wave -->
+    <path d="M 168 92 C 196 100 240 124 252 170 C 238 180 206 200 190 236 C 176 268 180 286 166 300 C 146 270 148 220 170 168 C 182 140 178 116 168 92 Z" fill="url(#emeraldGrad)"/>
+    <!-- Gold Ribbon 1 -->
+    <path d="M 194 88 C 214 100 248 128 256 168 C 248 174 224 196 210 230 C 198 258 202 278 190 292 C 178 268 178 234 192 198 C 206 164 204 128 194 88 Z" fill="url(#goldGrad)" stroke="#876625" stroke-width="0.8"/>
+    <!-- Emerald Mid Ribbon -->
+    <path d="M 218 84 C 236 104 262 136 268 176 C 262 182 242 208 230 240 C 218 272 224 290 216 304 C 206 280 206 244 220 208 C 232 176 230 134 218 84 Z" fill="url(#emeraldHighlight)"/>
+    <!-- Gold Ribbon 2 -->
+    <path d="M 238 82 C 254 104 278 140 280 180 C 274 186 256 214 246 246 C 236 278 240 296 234 310 C 224 286 226 250 238 214 C 250 182 248 134 238 82 Z" fill="url(#goldLight)" stroke="#876625" stroke-width="0.8"/>
+
+    <!-- Flowing Base Flourish Ribbons (Bottom Swoop of F & Hair) -->
+    <!-- Gold Outer Sweep -->
+    <path d="M 144 296 C 160 284 196 276 238 286 C 276 296 312 284 346 256 C 362 244 366 252 352 266 C 320 298 280 314 234 306 C 190 298 162 304 144 316 Z" fill="url(#goldGrad)"/>
+    <!-- Emerald Inner Sweep -->
+    <path d="M 148 300 C 164 288 198 280 238 290 C 272 298 304 288 334 266 C 342 260 344 264 336 274 C 310 300 276 314 236 306 C 194 298 166 306 148 318 Z" fill="url(#emeraldGrad)"/>
+
+    <!-- AI Female Profile Silhouette (Soft Ivory Porcelain Flesh Tone) -->
+    <g id="femaleFace">
+      <!-- Profile Outline & Shading -->
+      <path d="M 276 138 
+               C 288 144 298 152 304 162
+               C 309 170 307 178 300 185
+               C 306 186 314 188 316 193
+               C 317 197 312 201 306 203
+               C 314 207 316 213 313 218
+               C 310 223 301 224 296 225
+               C 298 230 299 236 295 240
+               C 288 247 274 250 264 252
+               C 272 240 274 220 272 204
+               C 270 188 268 174 276 138 Z"
+            fill="#FFFDF7" stroke="#DFC69D" stroke-width="0.8"/>
+
+      <!-- Delicate Eyelash (Serene closed eyes) -->
+      <path d="M 285 168 C 289 171 295 171 298 167" fill="none" stroke="#2B4E3E" stroke-width="1.6" stroke-linecap="round"/>
+      <path d="M 295 168 L 298 166" fill="none" stroke="#2B4E3E" stroke-width="1.2" stroke-linecap="round"/>
+
+      <!-- Soft Lip Touch -->
+      <path d="M 304 208 C 307 208.5 311 208.5 313 207" fill="none" stroke="#B88A58" stroke-width="1" stroke-linecap="round"/>
+    </g>
+
+    <!-- Circular Gold Earpiece (AI Audio Intelligence Indicator) -->
+    <g transform="translate(256, 190)" filter="url(#glowGold)">
+      <!-- Outer Earpiece Ring -->
+      <circle cx="0" cy="0" r="22" fill="url(#goldGrad)" stroke="#7A5A1E" stroke-width="1.2"/>
+      <circle cx="0" cy="0" r="18" fill="url(#emeraldGrad)"/>
+      <circle cx="0" cy="0" r="15" fill="none" stroke="url(#goldLight)" stroke-width="1.4"/>
+      <!-- Inner Star in Earpiece -->
+      <path d="M 0 -9 Q 1.5 -2 9 0 Q 1.5 2 0 9 Q -1.5 2 -9 0 Q -1.5 -2 0 -9 Z" fill="url(#goldLight)"/>
+      <circle cx="0" cy="0" r="2" fill="#FFFFFF"/>
+    </g>
+  </g>
+
+  <!-- ==================== GRAND WORDMARK: "FRIDAY" ==================== -->
+  <g filter="url(#softShadow)" transform="translate(0, 30)">
+    <!-- Base Letters in Deep Imperial Emerald with Beveled Gold Stroke -->
+    <text x="256" y="360"
+          text-anchor="middle"
+          font-family="'Bodoni Moda', 'Fraunces', Georgia, serif"
+          font-size="74"
+          font-weight="700"
+          letter-spacing="5"
+          fill="url(#emeraldGrad)"
+          stroke="url(#goldLight)"
+          stroke-width="1.2"
+          paint-order="stroke fill">
+      FRIDAY
+    </text>
+
+    <!-- Flourish details on Wordmark -->
+    <!-- Gold Star above the 'I' in FRIDAY -->
+    <g transform="translate(262, 300)">
+      <path d="M 0 -7 Q 1 -1.5 7 0 Q 1 1.5 0 7 Q -1 1.5 -7 0 Q -1 -1.5 0 -7 Z" fill="url(#goldLight)"/>
+      <circle cx="0" cy="0" r="1.2" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Graceful Gold Flourish Curve Weaving through the Letters -->
+    <path d="M 108 344 C 130 334 160 338 180 354 C 205 372 235 376 265 358 C 295 340 335 334 365 352 C 385 364 402 360 414 348"
+          fill="none"
+          stroke="url(#goldGrad)"
+          stroke-width="2.6"
+          stroke-linecap="round"/>
+    <path d="M 112 344 C 132 335 160 339 178 353 C 204 370 234 374 264 357 C 294 339 334 333 364 351"
+          fill="none"
+          stroke="#FFF2D6"
+          stroke-width="0.8"
+          stroke-linecap="round"
+          opacity="0.8"/>
+  </g>
+
+  <!-- ==================== SUBTITLE: "AI SPEECH INTELLIGENCE" ==================== -->
+  <g transform="translate(0, 32)">
+    <!-- Flanking Gold Rules -->
+    <line x1="112" y1="416" x2="168" y2="416" stroke="url(#goldGrad)" stroke-width="1.4" stroke-linecap="round"/>
+    <circle cx="170" cy="416" r="1.8" fill="url(#goldGrad)"/>
+
+    <text x="256" y="420"
+          text-anchor="middle"
+          font-family="'Manrope', -apple-system, sans-serif"
+          font-size="11.5"
+          font-weight="600"
+          letter-spacing="5.5"
+          fill="#173F30">
+      AI SPEECH INTELLIGENCE
+    </text>
+
+    <circle cx="342" cy="416" r="1.8" fill="url(#goldGrad)"/>
+    <line x1="344" y1="416" x2="400" y2="416" stroke="url(#goldGrad)" stroke-width="1.4" stroke-linecap="round"/>
+  </g>
+</svg>

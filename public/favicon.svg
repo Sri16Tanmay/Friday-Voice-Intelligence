@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Metallic Champagne Gold Gradients -->
+    <linearGradient id="favGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7E7C4" />
+      <stop offset="25%" stop-color="#DDB86C" />
+      <stop offset="50%" stop-color="#B38938" />
+      <stop offset="75%" stop-color="#ECCF8E" />
+      <stop offset="100%" stop-color="#966F24" />
+    </linearGradient>
+
+    <linearGradient id="favGoldLight" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C9A662" />
+      <stop offset="50%" stop-color="#FFF2D6" />
+      <stop offset="100%" stop-color="#B38938" />
+    </linearGradient>
+
+    <!-- Deep Imperial Emerald Jewel Disc Gradient -->
+    <radialGradient id="favEmeraldDisc" cx="48%" cy="46%" r="56%">
+      <stop offset="0%" stop-color="#0E4A35" />
+      <stop offset="45%" stop-color="#093828" />
+      <stop offset="78%" stop-color="#05271C" />
+      <stop offset="100%" stop-color="#031811" />
+    </radialGradient>
+
+    <linearGradient id="favEmeraldRibbon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#287355" />
+      <stop offset="50%" stop-color="#144C37" />
+      <stop offset="100%" stop-color="#09281D" />
+    </linearGradient>
+
+    <linearGradient id="favEmeraldHighlight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3FA27B" />
+      <stop offset="60%" stop-color="#1B5D44" />
+      <stop offset="100%" stop-color="#0D3526" />
+    </linearGradient>
+
+    <!-- Elevation Shadows -->
+    <filter id="favSoftShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="1.5" dy="3.5" stdDeviation="3" flood-color="#020E09" flood-opacity="0.45" />
+    </filter>
+    <filter id="favGlowGold" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="2.5" flood-color="#ECCF8E" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Outer Medallion Bezel & Disc -->
+  <circle cx="256" cy="256" r="236" fill="url(#favGoldGrad)" stroke="#634A1A" stroke-width="2.5" />
+  <circle cx="256" cy="256" r="226" fill="url(#favEmeraldDisc)" stroke="url(#favGoldLight)" stroke-width="3" />
+  <circle cx="256" cy="256" r="218" fill="none" stroke="url(#favGoldGrad)" stroke-width="1.2" opacity="0.65" />
+
+  <!-- Cardinal Four-Pointed Star Accents -->
+  <!-- Top Star -->
+  <g transform="translate(256, 30)">
+    <path d="M 0 -15 Q 2 -3.5 15 0 Q 2 3.5 0 15 Q -2 3.5 -15 0 Q -2 -3.5 0 -15 Z" fill="url(#favGoldGrad)" stroke="#5E4314" stroke-width="0.6" />
+    <path d="M 0 -11 Q 1 -2 11 0 Q 1 2 0 11 Q -1 2 -11 0 Q -1 -2 0 -11 Z" fill="url(#favEmeraldHighlight)" />
+    <circle cx="0" cy="0" r="1.8" fill="#FFF8EB" />
+  </g>
+
+  <!-- Bottom Star -->
+  <g transform="translate(256, 482)">
+    <path d="M 0 -15 Q 2 -3.5 15 0 Q 2 3.5 0 15 Q -2 3.5 -15 0 Q -2 -3.5 0 -15 Z" fill="url(#favGoldGrad)" stroke="#5E4314" stroke-width="0.6" />
+    <path d="M 0 -11 Q 1 -2 11 0 Q 1 2 0 11 Q -1 2 -11 0 Q -1 -2 0 -11 Z" fill="url(#favEmeraldHighlight)" />
+    <circle cx="0" cy="0" r="1.8" fill="#FFF8EB" />
+  </g>
+
+  <!-- Cardinal Left/Right Studs -->
+  <circle cx="30" cy="256" r="3.8" fill="url(#favGoldLight)" stroke="#634A1A" stroke-width="0.6" />
+  <circle cx="482" cy="256" r="3.8" fill="url(#favGoldLight)" stroke="#634A1A" stroke-width="0.6" />
+
+  <!-- Center Artwork Group -->
+  <g transform="translate(0, 16)">
+    <!-- Left Waveform Indicators -->
+    <g filter="url(#favSoftShadow)">
+      <circle cx="68" cy="235" r="3.6" fill="url(#favGoldGrad)" />
+      <rect x="80" y="221" width="7" height="28" rx="3.5" fill="url(#favGoldGrad)" />
+      <rect x="94" y="205" width="7.5" height="60" rx="3.7" fill="url(#favEmeraldHighlight)" stroke="url(#favGoldLight)" stroke-width="0.6" />
+      <rect x="109" y="187" width="8" height="96" rx="4" fill="url(#favGoldGrad)" />
+      <rect x="124" y="175" width="8.5" height="120" rx="4.2" fill="url(#favEmeraldHighlight)" stroke="url(#favGoldLight)" stroke-width="0.8" />
+      <rect x="140" y="195" width="8" height="80" rx="4" fill="url(#favGoldGrad)" />
+      <circle cx="157" cy="235" r="3.6" fill="url(#favGoldLight)" />
+    </g>
+
+    <!-- Right Waveform Indicators -->
+    <g filter="url(#favSoftShadow)">
+      <circle cx="355" cy="235" r="3.6" fill="url(#favGoldLight)" />
+      <rect x="365" y="195" width="8" height="80" rx="4" fill="url(#favGoldGrad)" />
+      <rect x="380" y="175" width="8.5" height="120" rx="4.2" fill="url(#favEmeraldHighlight)" stroke="url(#favGoldLight)" stroke-width="0.8" />
+      <rect x="395" y="187" width="8" height="96" rx="4" fill="url(#favGoldGrad)" />
+      <rect x="410" y="205" width="7.5" height="60" rx="3.7" fill="url(#favEmeraldHighlight)" stroke="url(#favGoldLight)" stroke-width="0.6" />
+      <rect x="424" y="221" width="7" height="28" rx="3.5" fill="url(#favGoldGrad)" />
+      <circle cx="444" cy="235" r="3.6" fill="url(#favGoldGrad)" />
+    </g>
+
+    <!-- Centerpiece: 'F' & AI Female Silhouette -->
+    <g filter="url(#favSoftShadow)">
+      <!-- Top Bar of F -->
+      <path
+        d="M 166 94 C 180 84 212 80 260 80 L 366 80 C 374 80 376 86 371 93 C 362 106 350 124 336 142 L 290 142 C 298 126 312 110 328 102 L 244 102 C 218 102 195 110 180 124 Z"
+        fill="url(#favGoldGrad)"
+        stroke="#5E4314"
+        stroke-width="0.8"
+      />
+      <path
+        d="M 170 91 C 184 82 214 78 260 78 L 368 78 C 376 78 376 84 371 90 C 360 102 348 120 334 138 L 294 138 C 304 122 318 106 332 98 L 246 98 C 216 98 194 106 178 120 Z"
+        fill="url(#favEmeraldRibbon)"
+        stroke="url(#favGoldLight)"
+        stroke-width="1.2"
+      />
+
+      <!-- Ribbons -->
+      <path
+        d="M 168 92 C 196 100 240 124 252 170 C 238 180 206 200 190 236 C 176 268 180 286 166 300 C 146 270 148 220 170 168 C 182 140 178 116 168 92 Z"
+        fill="url(#favEmeraldRibbon)"
+        stroke="url(#favGoldLight)"
+        stroke-width="0.8"
+      />
+      <path
+        d="M 194 88 C 214 100 248 128 256 168 C 248 174 224 196 210 230 C 198 258 202 278 190 292 C 178 268 178 234 192 198 C 206 164 204 128 194 88 Z"
+        fill="url(#favGoldGrad)"
+        stroke="#876625"
+        stroke-width="1"
+      />
+      <path
+        d="M 218 84 C 236 104 262 136 268 176 C 262 182 242 208 230 240 C 218 272 224 290 216 304 C 206 280 206 244 220 208 C 232 176 230 134 218 84 Z"
+        fill="url(#favEmeraldHighlight)"
+        stroke="url(#favGoldLight)"
+        stroke-width="0.8"
+      />
+      <path
+        d="M 238 82 C 254 104 278 140 280 180 C 274 186 256 214 246 246 C 236 278 240 296 234 310 C 224 286 226 250 238 214 C 250 182 248 134 238 82 Z"
+        fill="url(#favGoldLight)"
+        stroke="#876625"
+        stroke-width="1"
+      />
+
+      <!-- Lower Flourish Curves -->
+      <path
+        d="M 144 296 C 160 284 196 276 238 286 C 276 296 312 284 346 256 C 362 244 366 252 352 266 C 320 298 280 314 234 306 C 190 298 162 304 144 316 Z"
+        fill="url(#favGoldGrad)"
+        stroke="#5E4314"
+        stroke-width="0.6"
+      />
+      <path
+        d="M 148 300 C 164 288 198 280 238 290 C 272 298 304 288 334 266 C 342 260 344 264 336 274 C 310 300 276 314 236 306 C 194 298 166 306 148 318 Z"
+        fill="url(#favEmeraldRibbon)"
+        stroke="url(#favGoldLight)"
+        stroke-width="0.8"
+      />
+
+      <!-- AI Female Face Silhouette -->
+      <path
+        d="M 276 138 C 288 144 298 152 304 162 C 309 170 307 178 300 185 C 306 186 314 188 316 193 C 317 197 312 201 306 203 C 314 207 316 213 313 218 C 310 223 301 224 296 225 C 298 230 299 236 295 240 C 288 247 274 250 264 252 C 272 240 274 220 272 204 C 270 188 268 174 276 138 Z"
+        fill="#FFFFFF"
+        stroke="url(#favGoldLight)"
+        stroke-width="1.2"
+      />
+      <!-- Eyelash -->
+      <path d="M 285 168 C 289 171 295 171 298 167" fill="none" stroke="#05261B" stroke-width="2" stroke-linecap="round" />
+      <path d="M 295 168 L 298 166" fill="none" stroke="#05261B" stroke-width="1.4" stroke-linecap="round" />
+      <!-- Lips -->
+      <path d="M 304 208 C 307 208.5 311 208.5 313 207" fill="none" stroke="#B38938" stroke-width="1.4" stroke-linecap="round" />
+
+      <!-- Concentric Gold Earpiece -->
+      <g transform="translate(256, 190)" filter="url(#favGlowGold)">
+        <circle cx="0" cy="0" r="23" fill="url(#favGoldGrad)" stroke="#634A1A" stroke-width="1.4" />
+        <circle cx="0" cy="0" r="19" fill="url(#favEmeraldDisc)" />
+        <circle cx="0" cy="0" r="15.5" fill="none" stroke="url(#favGoldLight)" stroke-width="1.6" />
+        <path d="M 0 -10 Q 1.5 -2.5 10 0 Q 1.5 2.5 0 10 Q -1.5 2.5 -10 0 Q -1.5 -2.5 0 -10 Z" fill="url(#favGoldLight)" />
+        <circle cx="0" cy="0" r="2.4" fill="#FFFFFF" />
+      </g>
+    </g>
+
+    <!-- Lower Medallion Curve Balance -->
+    <path
+      d="M 170 350 C 205 374 235 378 265 360 C 295 342 325 350 342 362"
+      fill="none"
+      stroke="url(#favGoldGrad)"
+      stroke-width="3.2"
+      stroke-linecap="round"
+    />
+  </g>
+</svg>
